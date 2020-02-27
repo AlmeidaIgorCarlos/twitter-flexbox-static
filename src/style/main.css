@@ -5,4 +5,22 @@ body {
 
 #main {
     display: flex;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+#navigation-bar{
+    flex-grow: 0.3;
+}
+
+#feed{
+    flex-grow: 1;
+    border-left: 1px solid rgb(197, 197, 197);
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
+#search{
+    flex-grow: 1;
 }
