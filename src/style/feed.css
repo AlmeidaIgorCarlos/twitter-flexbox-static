@@ -1,57 +1,71 @@
-#initial-page{
+#initial-page {
     display: flex;
     justify-content: space-between;
-
     border-bottom: 1px solid rgb(197, 197, 197);
-
     padding: 0 20px;
 }
 
-#initial-page img{
+#initial-page img {
     padding: 10px;
 }
 
-#initial-page img:hover{
-    background-color: rgba(29,161,242,0.1);
+#initial-page img:hover {
+    background-color: rgba(29, 161, 242, 0.1);
     border-radius: 100px;
     cursor: pointer;
 }
 
-#tweet{
-    
-}
-
-#tweet-text{
+#tweet-text {
     font-weight: normal;
     display: flex;
     justify-content: flex-start;
     padding-top: 10px;
 }
 
-#tweet-text p{
-    padding-left: 10px;
+#tweet-text input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 1.0em;
 }
 
-#tweet-text img{
+#tweet-text img {
     width: 60px;
 }
 
-#tweet-bottom{
+#tweet-bottom {
     display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-#tweet-bottom img{
+#tweet-bottom img {
     width: 30px;
 }
 
-#tweet-button{
+#tweet-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tweet-button img {
+    margin-top: -30px;
+    margin-right: 15px;
+    width: 40px;
+}
+
+#tweet-button button {
     border: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
     border-radius: 30px;
-    height: 45px;
+    height: 40px;
     width: 100px;
-    background-color: rgba(29,161,242,1.00);
     color: white;
+    background-color: rgba(29, 161, 242, 1.00);
     font-weight: bolder;
+    margin-top: 0px;
 }
