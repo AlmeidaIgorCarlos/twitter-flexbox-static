@@ -1,3 +1,11 @@
+@import "nav.css";
+@import "feed.css";
+:root {
+    --twitter-blue-color: rgba(29, 161, 242, 1.00);
+    --twitter-hover-color: rgba(29, 161, 242, 0.2);
+    --twitter-border-color: rgb(197, 197, 197)
+}
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -5,22 +13,21 @@ body {
 
 #main {
     display: flex;
-
     font-size: 1.2em;
     font-weight: bold;
     font-family: system-ui;
 }
 
-#navigation-bar{
-    flex-grow: 0.3;
+#navigation-bar {
+    flex-grow: 0.1;
 }
 
-#feed{
-    flex-grow: 1;
-    border-left: 1px solid rgb(197, 197, 197);
-    border-right: 1px solid rgb(197, 197, 197);
+#feed {
+    flex-grow: 0.5;
+    border-left: 1px solid var(--twitter-border-color);
+    border-right: 1px solid var(--twitter-border-color);
 }
 
-#search{
+#search {
     flex-grow: 1;
 }

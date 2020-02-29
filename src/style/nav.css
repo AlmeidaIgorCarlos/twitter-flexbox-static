@@ -3,48 +3,46 @@
     position: relative;
 }
 
-#navigation-bar ul li{
+#navigation-bar ul li {
     display: flex;
     max-height: 60px;
 }
 
-#navigation-bar ul li:not(:first-of-type):not(:last-of-type):hover{
-    background-color: rgba(29, 161, 242, 0.2);;
+#navigation-bar ul li:not(:first-of-type):not(:last-of-type):hover {
+    background-color: var(--twitter-hover-color);
     border-radius: 30px;
 }
 
-#navigation-bar ul li p{
+#navigation-bar ul li p {
     text-align: left;
     padding-left: 50px;
 }
 
-.img{
+.img {
     width: 35px;
     padding-left: 15px;
 }
 
-.img-padding{
+.img-padding {
     position: relative;
     left: 5px;
 }
 
-.img-twitter{
+.img-twitter {
     min-width: 60px;
 }
 
-.tweet-button{
+.tweet-button {
     margin-right: 70px;
     flex-grow: 2;
-
     border: none;
     border-radius: 30px;
     height: 50px;
-
-    background-color: rgba(29,161,242,1.00);
+    background-color: var(--twitter-blue-color);
     color: white;
     font-weight: bolder;
 }
 
-.tweet-button:hover{
+.tweet-button:hover {
     cursor: pointer;
 }
