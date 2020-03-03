@@ -5,6 +5,8 @@
 #navigation-bar ul li {
     display: flex;
     max-height: 60px;
+    cursor: pointer;
+    user-select: none;
 }
 
 #navigation-bar ul li:not(:first-of-type):not(:last-of-type):hover {

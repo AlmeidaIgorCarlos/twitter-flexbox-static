@@ -12,11 +12,17 @@
     position: relative;
     top: 10px;
     padding: 5px;
+    width: 40px;
+    height: 40px;
 }
 
 #initial-page img:hover {
     background-color: var(--twitter-hover-color);
     border-radius: 200px;
+}
+
+#feed {
+    margin-left: 3%;
 }
 
 
@@ -92,8 +98,7 @@
 .tweet {
     display: flex;
     padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid var(--twitter-border-color);
+    border: 0.1px solid var(--twitter-border-color);
 }
 
 .tweet-photo {
@@ -143,12 +148,19 @@
 
 .action>img {
     width: 25px;
+    padding: 5px;
+}
+
+.action>img:hover {
+    border-radius: 100px;
+    background-color: var(--twitter-hover-color);
+    cursor: pointer;
 }
 
 .action>span {
     position: relative;
     font-size: 0.7em;
-    bottom: 7px;
+    bottom: 10px;
 }
 
 .cursor-pointer {
