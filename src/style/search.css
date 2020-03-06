@@ -1,0 +1,93 @@
+#search-content {
+    margin-left: 10%;
+}
+
+#search-text {
+    border-radius: 100px;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--twitter-search-color);
+    display: flex;
+}
+
+#search-text img {
+    flex-grow: 1;
+    width: 20px;
+}
+
+#search-text input {
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background-color: inherit;
+    text-align: left;
+    font-size: 20px;
+}
+
+#search-list-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    max-height: 50px;
+}
+
+#search-list-head img {
+    width: 30px;
+    position: relative;
+    top: 5px;
+}
+
+#search-list-container {
+    background-color: var(--twitter-search-color);
+    border-radius: 10px;
+    position: relative;
+    top: 15px;
+}
+
+#search-list-container ul {
+    position: relative;
+    top: -15px;
+    list-style: none;
+    padding: 0px;
+    border-top: 1px solid var(--twitter-border-color);
+}
+
+#search-list-container ul li {
+    margin: 0px;
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 15px;
+}
+
+.first-line span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.first-line img {
+    width: 20px;
+    position: relative;
+}
+
+.first-line img:hover {
+    outline: none;
+    cursor: pointer;
+}
+
+.second-line {
+    margin-top: -10px;
+    padding-left: 10px;
+}
+
+.third-line {
+    margin-top: -20px;
+    padding-left: 10px;
+    font-size: 0.8em;
+    font-weight: normal;
+}
