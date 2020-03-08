@@ -46,4 +46,5 @@
 
 .tweet-button:hover {
     cursor: pointer;
+    outline: none;
 }

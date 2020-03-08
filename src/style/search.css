@@ -1,20 +1,22 @@
 #search-content {
     margin-left: 10%;
+    /* max-width: 400px; */
 }
 
 #search-text {
     border-radius: 100px;
     border: none;
     margin-top: 10px;
-    width: 100%;
+    width: inherit;
     height: 40px;
     background-color: var(--twitter-search-color);
     display: flex;
 }
 
 #search-text img {
-    flex-grow: 1;
-    width: 20px;
+    width: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #search-text input {
