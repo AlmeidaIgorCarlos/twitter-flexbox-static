@@ -1,13 +1,11 @@
 #search-content {
     margin-left: 10%;
-    /* max-width: 400px; */
 }
 
 #search-text {
     border-radius: 100px;
     border: none;
     margin-top: 10px;
-    width: inherit;
     height: 40px;
     background-color: var(--twitter-search-color);
     display: flex;
@@ -26,6 +24,7 @@
     background-color: inherit;
     text-align: left;
     font-size: 20px;
+    width: 100%;
 }
 
 #search-list-head {
