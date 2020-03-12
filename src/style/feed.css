@@ -102,7 +102,7 @@
 .tweet {
     display: flex;
     padding-top: 10px;
-    border: 0.1px solid var(--twitter-border-color);
+    border-top: 0.1px solid var(--twitter-border-color);
 }
 
 .tweet-photo {
