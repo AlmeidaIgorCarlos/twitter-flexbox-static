@@ -125,7 +125,7 @@
 
 #follow-container ul li input {
     position: relative;
-    right: 10px;
+    right: 20px;
     top: 20px;
     outline: none;
     border: 1px solid var(--twitter-blue-color);
@@ -142,11 +142,17 @@
     outline: none;
 }
 
+#follow-container ul li:last-of-type {
+    max-height: 40px;
+}
+
 #follow-container ul li:last-of-type p {
     position: relative;
     left: 5px;
+    bottom: 10px;
     color: var(--twitter-blue-color);
-    font-weight: normal;
+    font-weight: bold;
+    padding-bottom: 0px;
 }
 
 #follow-container ul li:last-of-type p:hover {
