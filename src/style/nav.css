@@ -7,6 +7,7 @@
     max-height: 60px;
     cursor: pointer;
     user-select: none;
+    width: 225px;
 }
 
 #navigation-bar ul li:not(:first-of-type):not(:last-of-type):hover {
@@ -15,7 +16,7 @@
 }
 
 #navigation-bar ul li p {
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
     left: 30px;
     bottom: 5px;

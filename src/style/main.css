@@ -30,7 +30,7 @@ body {
 
 #feed {
     flex-grow: 0.5;
-    max-width: 700px;
+    max-width: 600px;
     border-left: 1px solid var(--twitter-border-color);
     border-right: 1px solid var(--twitter-border-color);
 }
