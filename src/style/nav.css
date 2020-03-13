@@ -15,8 +15,10 @@
 }
 
 #navigation-bar ul li p {
-    text-align: left;
-    padding-left: 50px;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    bottom: 5px;
 }
 
 .img {
