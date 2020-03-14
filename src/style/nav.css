@@ -16,7 +16,6 @@
 }
 
 #navigation-bar ul li p {
-    /* display: inline-block; */
     position: relative;
     left: 30px;
     bottom: 5px;
@@ -50,4 +49,20 @@
 .tweet-button:hover {
     cursor: pointer;
     outline: none;
+}
+
+@media (max-width: 1200px) {
+    #navigation-bar ul li:last-of-type {
+        display: none;
+    }
+    #navigation-bar ul {
+        padding: 0px;
+    }
+    #navigation-bar ul li {
+        min-height: 60px;
+        width: inherit;
+    }
+    #navigation-bar ul li p {
+        display: none;
+    }
 }
