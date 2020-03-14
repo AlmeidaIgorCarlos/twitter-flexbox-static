@@ -49,7 +49,20 @@ body {
         padding-right: 30px;
     }
     #feed {
-        flex-grow: 0.5;
+        /* flex-grow: 0.5; */
         max-width: 750px;
+    }
+}
+
+@media (max-width: 1080px) {
+    #search {
+        display: none;
+    }
+    #main {
+        justify-content: center;
+    }
+    #feed {
+        /* flex-grow: 0.5; */
+        /* max-width: 100%; */
     }
 }
