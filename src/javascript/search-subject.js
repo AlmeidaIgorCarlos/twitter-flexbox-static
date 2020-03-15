@@ -1,10 +1,18 @@
 const arrowImages = document.querySelectorAll('.first-line>img')
-const floatComponents = document.querySelectorAll('.first-line>ul')
+const floatingComponents = document.querySelectorAll('.first-line>ul')
 
 function applyArrowImageClickEvent(components) {
     components.forEach(function(component, index) {
-        component.addEventListener("mouseover", function() {
+        component.addEventListener("click", function() {
             showFloatComponent(index)
+        })
+
+        floatingComponents[index].addEventListener("mouseover", function() {
+            showFloatComponent(index)
+        })
+
+        floatingComponents[index].addEventListener("mouseout", function() {
+            clearFloatingComponents(index)
         })
 
     })
@@ -12,7 +20,7 @@ function applyArrowImageClickEvent(components) {
 
 function showFloatComponent(index) {
     try {
-        const component = floatComponents[index]
+        const component = floatingComponents[index]
         if (typeof component === 'undefined')
             throw new Error('ul component must be valid')
 
@@ -24,20 +32,19 @@ function showFloatComponent(index) {
     }
 }
 
-function clearFloatingComponents() {
-    const allComponents = document.getElementsByTagName('*')
-    for (let component of allComponents) {
-        if (component.tagName.toLowerCase() !== 'img') {
-            component.addEventListener('click', function() {
-                floatComponents.forEach(function(floatComponent) {
-                    floatComponent.style.display = 'none'
-                })
-            })
-        }
+function clearFloatingComponents(index) {
+    try {
+        const component = floatingComponents[index]
+        if (typeof component === 'undefined')
+            throw new Error('ul component must be valid')
 
+        component.style.display = 'none'
+    } catch (error) {
+        if (error.message === 'ul component must be valid')
+            console.error('Was found an unvalid UL component')
+        else console.error(error.message)
     }
 }
 
 
-clearFloatingComponents()
 applyArrowImageClickEvent(arrowImages)
