@@ -64,6 +64,48 @@
     justify-content: space-between;
     padding: 10px;
     height: 15px;
+    position: relative;
+}
+
+#news-container .first-line>img:hover {
+    background-color: var(--twitter-hover-color);
+    border-radius: 100px;
+}
+
+#news-container .first-line>ul {
+    display: none;
+    border: 1px solid var(--twitter-border-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--twitter-border-color);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+#news-container .first-line>ul>li {
+    cursor: pointer;
+    outline: none;
+}
+
+#news-container .first-line>ul>li {
+    display: flex;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+#news-container .first-line>ul>li:hover {
+    background-color: var(--twitter-hover-color);
+}
+
+#news-container .first-line>ul>li>p {
+    margin-left: 10px;
+}
+
+#news-container .first-line>ul>li>img {
+    margin-left: 10px;
 }
 
 #news-container .first-line span {
