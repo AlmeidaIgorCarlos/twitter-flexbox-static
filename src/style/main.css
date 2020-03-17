@@ -49,7 +49,6 @@ body {
         padding-right: 30px;
     }
     #feed {
-        /* flex-grow: 0.5; */
         max-width: 750px;
     }
 }
@@ -60,5 +59,23 @@ body {
     }
     #main {
         justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+    #feed {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 580px) {
+    #feed {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    #feed {
+        max-width: 350px;
     }
 }
