@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static/issues"
   },
-  "homepage": "https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static#readme"
+  "homepage": "https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static#readme",
+  "devDependencies": {
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
