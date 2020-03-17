@@ -1,24 +1,27 @@
 {
-  "name": "twitter-flexbox-static",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static/issues"
-  },
-  "homepage": "https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static#readme",
-  "devDependencies": {
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
-  }
+    "name": "twitter-flexbox-static",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build-development": "cross-env NODE_ENV=development webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static/issues"
+    },
+    "homepage": "https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static#readme",
+    "devDependencies": {
+        "cross-env": "^7.0.2",
+        "css-loader": "^3.4.2",
+        "mini-css-extract-plugin": "^0.9.0",
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11"
+    }
 }
