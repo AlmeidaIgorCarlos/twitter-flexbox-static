@@ -1,5 +1,3 @@
-import '../style/main.css'
-
 const arrowImages = document.querySelectorAll('.first-line>img')
 const floatingComponents = document.querySelectorAll('.first-line>ul')
 
