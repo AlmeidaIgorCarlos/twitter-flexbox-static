@@ -31,3 +31,11 @@ The visualization and the stylization was made throw css3 flexbox. I've got real
 I also implemented some media queries in order to adjust some layout details to look good in all devices possible. But I had some limitations beacause according to the Twitter interface, it was not design using a *mobile first* methodology.
 
 I had to use some javascript to code the functionality that controls when the floating menu shows itself by the time that the right menu is clicked. As the picture bellow shows:
+
+![alt text](https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static/blob/master/images/twitter-right-menu.PNG)
+
+The bundler used was the Webpack. I've heard of it before but I have never used it, because as I already told you guys... I am not specialied in frontend devolopment. After using it, I realized how important a bundler is in a frontend project. You can basically refer a entrypoint and add some pluggins to build, minize and optimize all you files, from js files to html files.
+
+At the package.json file, there are build script for both the development process and production process.
+
+Since we've coded some functionalities, I decided that it would be a great idea to add some tests in it. Just to guarantee that our code will do as planned. To do that, I used some well known node.js depencies like Mocha, Chain and Sinon.
