@@ -13,7 +13,7 @@ The choosen interface is the *twitter feed* interface, as follows:
 ## Technical Architecture
 This topic is dedicated to explain the technologies involved and the architecture/context that they are applied in this project.
 
-### Used technologies
+### Used Technologies
 
 - Html5
 - CSS3 - Flexbox
@@ -38,4 +38,26 @@ The bundler used was the Webpack. I've heard of it before but I have never used 
 
 At the package.json file, there are build script for both the development process and production process.
 
+Development build
+```
+npm run build-development
+```
+
+Production build
+```
+npm run build-production
+```
+
 Since we've coded some functionalities, I decided that it would be a great idea to add some tests in it. Just to guarantee that our code will do as planned. To do that, I used some well known node.js depencies like Mocha, Chain and Sinon.
+
+To run all test you can run the following command from your terminal:
+
+```
+npm run unit-test
+```
+
+### Directory Structure
+
+The used directory structure is as the picture bellow show us:
+
+![alt text](https://github.com/AlmeidaIgorCarlos/twitter-flexbox-static/blob/master/images/directory-structure.PNG)
