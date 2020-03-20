@@ -10,7 +10,7 @@ module.exports = {
     mode,
     entry: './src/scripts/webpack-entrypoint.js',
     output: {
-        filename: 'search-subject.js',
+        filename: 'index.js',
         path: `${__dirname}/dist/`
     },
     plugins: [
@@ -37,7 +37,8 @@ module.exports = {
             use: {
                 loader: 'html-loader',
                 options: {
-                    attrs: [':data-src']
+                    attrs: [':data-src'],
+                    minimize: mode === 'development' ? false : true
                 }
             }
         }]

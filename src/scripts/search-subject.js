@@ -1,50 +1,43 @@
-const arrowImages = document.querySelectorAll('.first-line>img')
-const floatingComponents = document.querySelectorAll('.first-line>ul')
+module.exports.applyArrowImageClickEvent = function(arrowComponents, floatingComponents) {
+    if (typeof arrowComponents === 'undefined')
+        throw new Error('Parameter "components" must not be undefined')
+    if (arrowComponents === null)
+        throw new Error('Parameter "components" must not be null')
 
-function applyArrowImageClickEvent(components) {
-    components.forEach(function(component, index) {
-        component.addEventListener("click", function() {
-            showFloatComponent(index)
+    arrowComponents.forEach((component, index) => {
+        component.addEventListener("click", () => {
+            this.showFloatComponent(floatingComponents, index, true)
         })
 
-        floatingComponents[index].addEventListener("mouseover", function() {
-            showFloatComponent(index)
+        floatingComponents[index].addEventListener("mouseover", () => {
+            this.showFloatComponent(floatingComponents, index, true)
         })
 
-        floatingComponents[index].addEventListener("mouseout", function() {
-            clearFloatingComponents(index)
+        floatingComponents[index].addEventListener("mouseout", () => {
+            this.showFloatComponent(floatingComponents, index, false)
         })
 
     })
 }
 
-function showFloatComponent(index) {
-    try {
-        const component = floatingComponents[index]
-        if (typeof component === 'undefined')
-            throw new Error('ul component must be valid')
+module.exports.showFloatComponent = function(components, index, showFloatingComponent) {
+    if (components.length < 1)
+        throw new Error('there must be at least one component')
+    if (index < 0)
+        throw new Error('index must not be negative')
 
-        component.style.display = 'inline-block'
-    } catch (error) {
-        if (error.message === 'ul component must be valid')
-            console.error('Was found an unvalid UL component')
-        else console.error(error.message)
-    }
+    const component = components[index]
+
+    if (typeof component === 'undefined')
+        throw new Error('ul component must be valid')
+
+    if (typeof component.style === 'undefined')
+        throw new Error('Component must have style property')
+
+    if (typeof component.style != 'object')
+        throw new Error('Component property style must be an object')
+
+    component.style.display = showFloatingComponent === true ? 'inline-block' : 'none'
+
+    return component
 }
-
-function clearFloatingComponents(index) {
-    try {
-        const component = floatingComponents[index]
-        if (typeof component === 'undefined')
-            throw new Error('ul component must be valid')
-
-        component.style.display = 'none'
-    } catch (error) {
-        if (error.message === 'ul component must be valid')
-            console.error('Was found an unvalid UL component')
-        else console.error(error.message)
-    }
-}
-
-
-applyArrowImageClickEvent(arrowImages)
