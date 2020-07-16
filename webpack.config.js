@@ -1,17 +1,21 @@
-const webpack = require('webpack')
+const path = require('path')
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const mode = process.env.NODE_ENV === 'development' ? 'development' : 'production'
+const watch = mode === 'development' ? true : false
+const minimize = mode === 'development' ? false : true
 
 module.exports = {
     mode,
-    entry: './src/scripts/webpack-entrypoint.js',
+    watch,
+    entry: './src/scripts/index.js',
     output: {
         filename: 'index.js',
-        path: `${__dirname}/dist/`
+        path: path.resolve(__dirname, 'dist')
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -38,7 +42,7 @@ module.exports = {
                 loader: 'html-loader',
                 options: {
                     attrs: [':data-src'],
-                    minimize: mode === 'development' ? false : true
+                    minimize
                 }
             }
         }]
@@ -47,5 +51,8 @@ module.exports = {
         minimizer: [
             new OptimizeCSSAssetsPlugin({})
         ]
+    },
+    devServer:{
+        port: 9000
     }
 }
