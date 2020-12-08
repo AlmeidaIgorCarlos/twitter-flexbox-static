@@ -72,14 +72,3 @@ body {
         padding-right: 10px;
     }
 }
-
-@media (max-width: 390px) {
-    #icons>svg {
-        margin-left: 5px;
-    }
-
-    .tweet-owner{
-        height: 70px;
-        padding-bottom: 0px;
-    }
-}
