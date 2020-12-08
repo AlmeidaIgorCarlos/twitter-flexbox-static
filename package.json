@@ -7,7 +7,8 @@
         "start": "webpack-dev-server",
         "build:development": "cross-env NODE_ENV=development webpack",
         "build:production": "cross-env NODE_ENV=production webpack",
-        "unit-test": "mocha ./tests/search-subject.test.js"
+        "unit-test": "mocha ./tests/search-subject.test.js",
+        "validate": "node ./node_modules/eslint/bin/eslint.js ."
     },
     "repository": {
         "type": "git",
@@ -25,6 +26,7 @@
         "copy-webpack-plugin": "^5.1.1",
         "cross-env": "^7.0.2",
         "css-loader": "^3.4.2",
+        "eslint": "^7.15.0",
         "html-loader": "^0.5.5",
         "html-webpack-plugin": "^3.2.0",
         "mini-css-extract-plugin": "^0.9.0",
