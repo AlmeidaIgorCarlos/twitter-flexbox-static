@@ -1,28 +1,56 @@
 #navigation-bar ul {
     list-style: none;
+    font-size: .9em;
 }
 
-#navigation-bar ul li {
+#navigation-bar ul > li {
+    height: 55px;
+}
+
+#navigation-bar ul > li:first-of-type {
+    margin-bottom: 10%;
+}
+
+#navigation-bar ul > li:not(:first-of-type) {
+    margin-left: 20px;
+}
+
+#navigation-bar ul li div  {
     display: flex;
-    max-height: 60px;
     cursor: pointer;
     user-select: none;
-    width: 225px;
+    width: calc(100% - 10%);
+    max-height: 40px;
 }
 
-#navigation-bar ul li:not(:first-of-type):not(:last-of-type):hover {
+#navigation-bar ul li div:hover {
     background-color: var(--twitter-hover-color);
     border-radius: 30px;
+    color: var(--twitter-blue-color);
 }
 
-#navigation-bar ul li p {
+#navigation-bar ul li div p {
     position: relative;
     left: 30px;
-    bottom: 5px;
+    bottom: 10px;
+}
+
+#navigation-bar ul li div img{
+    width: 40px;
+    height: 40px;
+}
+
+#navigation-bar ul > li:last-of-type {
+    margin-top: 5%;
+}
+
+#navigation-bar ul > li:last-of-type > button {
+    width: 80%;
+    margin-right: 10%;
 }
 
 .img {
-    width: 35px;
+    width: 20px;
     padding-left: 15px;
 }
 
@@ -32,18 +60,17 @@
 }
 
 .img-twitter {
-    min-width: 60px;
+    width: 50px;
 }
 
 .tweet-button {
-    margin-right: 70px;
-    flex-grow: 2;
     border: none;
     border-radius: 30px;
     height: 50px;
     background-color: var(--twitter-blue-color);
     color: white;
     font-weight: bolder;
+    position: relative;
 }
 
 .tweet-button:hover {

@@ -9,6 +9,7 @@
     height: 40px;
     background-color: var(--twitter-search-color);
     display: flex;
+    border-bottom: 
 }
 
 #search-text img {
@@ -23,7 +24,7 @@
     border-radius: 100px;
     background-color: inherit;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -55,9 +56,14 @@
     border-top: 1px solid var(--twitter-border-color);
 }
 
+.search-list-container ul li:not(:last-of-type){
+    border-bottom: 1px solid var(--twitter-border-color);
+}
+
 .search-list-container ul li {
     margin: 0px;
 }
+
 
 #news-container .first-line {
     display: flex;
@@ -141,7 +147,6 @@
 }
 
 #follow-container ul li img {
-    /* flex-grow: 1; */
     width: 50px;
 }
 
@@ -174,8 +179,8 @@
     color: var(--twitter-blue-color);
     border-radius: 30px;
     background-color: inherit;
-    font-size: 20px;
-    height: 35px;
+    font-size: 15px;
+    height: 30px;
     padding-top: 3px;
 }
 
@@ -193,8 +198,8 @@
     left: 5px;
     bottom: 10px;
     color: var(--twitter-blue-color);
-    font-weight: bold;
     padding-bottom: 0px;
+    font-weight: 400;
 }
 
 #follow-container ul li:last-of-type p:hover {
